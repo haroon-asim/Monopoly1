@@ -84,7 +84,7 @@ int main()
     player_numbers(no_of_players);
     start_values();
     player_name_inputs(no_of_players);
-    cout << dice_roll();
+    cout << dice_roll() << endl;
 
 }
 
