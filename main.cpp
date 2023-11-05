@@ -59,6 +59,7 @@ typedef struct
     string piece;
     bool jail;
     double balance;
+    places* position;
 } player;
 player players[MAX_PLAYERS];
 
@@ -298,6 +299,7 @@ void player_name_inputs(int & no_of_players)
         CHARS[p - 1] += "(TAKEN)";
 
         players[i].piece = CHARS[p - 1];
+        players[i].position = &(blocks[0]); //pointter that points to GO 
     }
 }
 
